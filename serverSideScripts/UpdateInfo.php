@@ -1,83 +1,80 @@
-<?php
+<?php 
+
     if(isset($_POST["userId"])){
-        require_once 'config.php';
-
+        require_once('config.php');
+        
         $userid = $_POST["userId"];
-        $profileImage = $_POST["profileImage"];
-        $firstname = $_POST["firstname"];
-        $lastname = $_POST["lastname"];
-        $telephone = $_POST["phone"];
-        $email = $_POST["email"];
-        $homeAddress = $_POST["homeAddress"];
-
-        // encryting the password to Sha-512(denoted by $6$)
-        // first parameter is the password to encrypt and the second one is the encryption key sort of
-        $encrypted_password = crypt($password, '$6$rounds=1000$IamGoingToBeKind$');
+        $materialID = $_POST["materialID"];
+        $OrganizationID = $_POST["organizationID"];
+        $materialImage = $_POST["materialImage"];
+        $materialDescription = $_POST["material_description"];
+        $materialPrizeWorth = $_POST["material_prize_worth"];
 
         $profileImagename = "";
 
-        if($profileImage != ""){
-            $imageDecoder = base64_decode($profileImage);
-            file_put_contents("pictures/profilepics/".$userid.".jpg",$imageDecoder);
-            $profileImagename = $userid.".jpg";
+        if($materialImage != ""){
+            $imageDecoder = base64_decode($materialImage);
+            file_put_contents("pictures/materialImage/".$materialID.".jpg",$imageDecoder);
+            $materialImagename = $materialID.".jpg";
         }
 
-        $update = $con->prepare("UPDATE Users SET ProfileImage = ?, Firstname = ?, Lastname = ?, 
-        Phone_number = ?, Email = ?,Home_Address = ? WHERE UserID = ?");
-        $updating = $update->execute(array($profileImagename,$firstname,$lastname,$telephone,$email,
-        $homeAddress,$userid));
 
-        if($updating){
-            echo "Update Complete";
+        $uploadMaterial = $con->prepare("INSERT INTO MaterialDonations(UserId, MaterialId, OrgId, MaterialImage,MaterialDescription ,MaterialWorth,Addate,Addtime) 
+        VALUES(?,?,?,?,?,?,curdate(),TIME_FORMAT(CURRENT_TIME(),'%h:%i:%s'))");
+        $uploadingIt = $uploadMaterial->execute(array($userid,$materialID,$OrganizationID,$materialImagename,$materialDescription,
+        $materialPrizeWorth));
 
-		    //sending notifications
-                $notifyId = $userid;
-                $notifyImage = "UpS";
-                $nofifySubject = "Update Successful";
-                $notifyMessage = "Hi,".$firstname." You have successfully updated your profile details. Keep doing so regularly so that it would be easy for us to contact you when we need to. Keep on doing good and Have a nice day";
-                $notifications = $con->prepare("INSERT INTO Notifications(NotifyID,NotifyImage,NotifySubject,NotifyMessage,
-                Addate,Addtime) VALUES(?,?,?,?,curdate(),TIME_FORMAT(CURRENT_TIME(),'%h:%i:%s'));");
-                $sentnotifications = $notifications->execute(array($notifyId,$notifyImage,$nofifySubject,$notifyMessage));
+        if($uploadingIt){
+            echo "Thanks. A child would be glad";
+            
+             //sending notifications
+             $notifyId = $userid;
+             $notifyImage = "DoS";
+             $nofifySubject = "Donation Successful";
+             $notifyMessage = "Hi,".$firstname." WoW. Did you hear the load shout of joy of a child. You have just helped this child to get food today. Your donation has been received by us and is being processed so that it goes to the right destination as soon as possible. All processes would be communicated to you. Keep it up. One point has been added to you. ";
+             $notifications = $con->prepare("INSERT INTO Notifications(NotifyID,NotifyImage,NotifySubject,NotifyMessage,
+             Addate,Addtime) VALUES(?,?,?,?,curdate(),TIME_FORMAT(CURRENT_TIME(),'%h:%i:%s'));");
+             $sentnotifications = $notifications->execute(array($notifyId,$notifyImage,$nofifySubject,$notifyMessage));
 
-                if($sentnotifications){
-                    //sending mail
-		            $to = $email;
-                    $subject = "BeKind Profile Update Successful";
-                    $txt = "Recent activity on your account confirms that you have successfully updated your profile detials. Feel free to contact us in times of any difficulty.";
+            if($sentnotifications){
+                $addtodonations = $con->prepare("INSERT INTO Donations(UserId, OrgId, MaterialId, Addate, Addtime) VALUES(?,?,?,curdate(),TIME_FORMAT(CURRENT_TIME(),'%h:%i:%s'))");
+                $addtodonations->execute(array($userid,$OrganizationID,$materialID));
+
+                $getEmail = $con->prepare("SELECT Email As emailhere FROM Users WHERE UserID = ?");
+                $getEmail->execute(array($userid));
+                $theemail = $getEmail->fetch();
+
+                //getting the organizations name using the ID.
+                    $getOrganizationName = $con->prepare("SELECT OrgName FROM Organizational_Info WHERE OrgID = ?");
+                    $getOrganizationName->execute(array($OrganizationID));
+            
+                    $theOrganizationName = $getOrganizationName->fetch();
+            
+                    $to = $theemail["emailhere"];
+                    $subject = "Donation Successful";
+                    $txt = "Thank you for successfully donating to ".$theOrganizationName["OrgName"]." A smile has been 
+                    put on the face of a child due to your generous contribution. Periodic noifications would be sent to you
+                    concerning the whereabouts of your contributions until it is finally delivered at ".$theOrganizationName["OrgName"].
+                    " 24 hour support is here for all who need help. Enjoy";
                     $headers = "From: beKind.ns01.000webhost.com" . "\r\n";
                     mail($to,$subject,$txt,$headers);
-                    //sending mail ends
-                    
-                    $checkifupdate = $con->prepare("SELECT COUNT(1) AS updatecheck FROM Updates WHERE UserID = ?");
-                    $checkifupdate->execute(array($userid));
-    
-                    $gettherevalue = $checkifupdate->fetch();
-                    if($gettherevalue["updatecheck"] == 0){
-                        $addvalue = $con->prepare("INSERT INTO Updates(UserID, UpdateDate, UpdateTime) VALUES(?,curdate(),TIME_FORMAT(CURRENT_TIME(),'%h:%i:%s'))");
-                        $addvalue->execute(array($userid));
-                    }else{
-                        $updateit->prepare("UPDATE Updates SET UpdateDate = curdate(), UpdateTime = TIME_FORMAT(CURRENT_TIME(),'%h:%i:%s') WHERE UserID = ?");
-                        $updateit->execute(array($userid));
-                    }
-                }
-                }else{
-                    echo "Something Went Wrong.";
+            }
 
-            //sending the failed notification
-                $notifyId = $userid;
-                            $notifyImage = "UpSF";
-                            $nofifySubject = "Update Failed";
-                            $notifyMessage = "Hi,".$firstname." Update of profile failed. Please try again later and of the problem persists do not hesitate to contact us for assistance.";
-                            $notifications = $con->prepare("INSERT INTO Notifications(NotifyID,NotifyImage,NotifySubject,NotifyMessage,
-                            Addate,Addtime) VALUES(?,?,?,?,curdate(),TIME_FORMAT(CURRENT_TIME(),'%h:%i:%s'));");
-                            $notifications->execute(array($notifyId,$notifyImage,$nofifySubject,$notifyMessage));
-            //failed notification ends here
+        }else{
+            echo "Donation Failed";
+             //sending notifications
+             $notifyId = $userid;
+             $notifyImage = "DoF";
+             $nofifySubject = "Donation Failed";
+             $notifyMessage = "Hi,".$firstname." Sorry, but this donation was interupted somewhere. Please go through the donation process again. If the problem still persists do not hesitate to contact us. ";
+             $notifications = $con->prepare("INSERT INTO Notifications(NotifyID,NotifyImage,NotifySubject,NotifyMessage,
+             Addate,Addtime) VALUES(?,?,?,?,curdate(),TIME_FORMAT(CURRENT_TIME(),'%h:%i:%s'));");
+             $notifications->execute(array($notifyId,$notifyImage,$nofifySubject,$notifyMessage));
         }
     }else{
-        die("<h1>Cannot Access This Page</h1>");
+        die("<h1>Access Denied</h1>");
+
     }
-
-
 
 
 ?>
