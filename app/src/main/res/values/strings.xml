@@ -16,4 +16,170 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
+
+    <!--terms and conditions-->
+    <string name="termsAndCons"><b>Please read these Terms and Conditions carefully. By applying to
+    be (and continuing to be) a member of the BeKind platform, each charity and similar organisation
+    (each a “Charity” for the purposes of these Terms and Conditions) is agreeing to these Terms
+    and Conditions. If the Charity does not wish to be bound by these Terms and Conditions,
+    the Charity should not continue to use or access any of the JustGiving Services (as defined below).</b>
+    </string>
+
+    <string name="termsAndCons2">BeKind operates presently in Ghana and Sections  1 to 15 of these
+    Terms and Conditions (the “core terms”) apply to all Charities, wherever they are located.
+    Different and additional terms (displayed after the core terms) may apply depending on the
+    type of Charity and where a Charity is based, as described below.
+    </string>
+
+    <string name="termsAndCons3">Bekind is a trading name of the local Bekind entity as set out in
+    the country specific terms. BeKind operates the Be tools and services  which allows users
+    to create fundraising pages, for users to donate to those pages and for Charities to access
+    data about those pages (together, the \"JustGiving Services\"). The Terms and Conditions govern
+    the Charity\'s use of the JustGiving Services.</string>
+
+    <string name="termsAndCons4">BeKind may change or update these Terms and Conditions from time to time.
+    It is the Charity\'s responsibility to access and check these Terms and Conditions whenever the
+    Charity accesses or uses the BeKind Services. The latest version of these Terms and Conditions
+    will govern any future usage by the Charity of the BeKind Services.
+    </string>
+
+    <string name="termsAndCons5">These Terms and Conditions supersede and replace all previous versions of the Terms and Conditions.
+    </string>
+
+
+    <string name="termsAndCons6Head"><b>1. Term and Membership</b></string>
+    <string name="termsAndCons6">For the purposes of these Terms and Conditions, \"Commencement Date\"
+    shall mean the date from which the Charity is notified that the Charity has been successfully
+    registered to use the BeKind Services (which shall be at BeKind’s sole discretion).
+    BeKind shall provide the Services to the Charity and the Charity shall comply with these Terms
+    and Conditions until the membership is validly terminated.
+    </string>
+
+    <string name="termsAndCons7Head"><b>2. JustGiving\’s Obligations \n
+    Donations and Charity Trust Funds Account</b>
+    </string>
+
+    <string name="termsAndCons721">
+    <b>2.1</b> BeKind will maintain the Charity Trust Funds Accounts at any of their preferred bank in Ghana.
+    These are trusted bank accounts in which monies (other than the interest accruing on such monies
+    are held on trust for the Charity and do not belong to BeKind.
+    </string>
+
+    <string name="termsAndCons722">
+    <b>2.2 </b>BeKind will operate the Services so that donors can make online donations by credit
+    or debit card, or by any other payment method made available by BeKind, through a Fundraising
+    Page set up for the Charity or on the Charity\'s area website
+    </string>
+
+    <string name="termsAndCons723">
+    <b>2.3 </b> BeKind will set up arrangements to ensure that all donations received
+    (after deduction of bank processing charges, JustGiving\'s transaction fees (as described in Section 6)
+    and applicable sales taxes) are:
+    </string>
+
+    <string name="termsAndCons7231">
+    <b>     2.3.1 </b>
+    paid into a Charity Trust Funds Account and are held in trust for the Charity; and
+    </string>
+
+    <string name="termsAndCons7232">
+    <b>     2.3.2 </b>paid out by automated bank transfer from the Charity Trust Funds Account to the Charity\'s validated bank account.
+    These payments will be made monthly.
+    </string>
+
+    <string name="termsAndCons724"><b>2.4 </b> Bekind will provide information systems design,
+    testing and verification standards and requirements in accordance with good industry practice
+    to ensure that donors\' credit cards and debit cards are debited and the
+    Charity Trust Funds account is credited in a secure manner.
+    </string>
+
+    <string name="termsAndCons725Head">
+    <b>2.3.1 </b>Support and Donation Acknowledgements
+    </string>
+
+    <string name="termsAndCons725">
+    <b>2.5 </b>BeKind will send prompt e‑mail acknowledgements to donors in respect of each donation made to the Charity via our Services.
+    </string>
+
+    <string name="termsAndCons726">
+    <b>2.6 </b> BeKind  will respond to fundraisers\' and donors\' account enquiries that it receives.
+    </string>
+
+    <string name="termsAndCons727Head">Personal Information
+ </string>
+
+    <string name="termsAndCons727">
+    <b>2.7 </b> BeKind will capture personal information including but not limited to the fundraiser\'s and the donor\'s name, title,
+        address and email address (\"Personal Information\") at all times in accordance with local privacy
+        laws, regulatory requirements and guidance as updated and amended from time to time including such
+        laws, regulatory requirements and guidance applicable in the territory where donors and fundraisers
+        access the Website
+        (\"Local Privacy Laws\") and protect and secure such information. Charities should refer to the
+        \"BeKind Terms of Service\", \"BeKind Privacy Policy\" for more details of how BeKind operates
+        its services, processes Personal Information and uses cookies
+    </string>
+
+    <string name="termsAndCons728">
+     <b>2.8 </b>To the maximum extent possible under applicable law, BeKind will abide by the instructions of all fundraisers and donors in respect of their Personal Information.
+    </string>
+
+
+    <string name="termsAndCons729">
+     <b>2.9 </b>To the maximum extent possible under applicable law, BeKind will abide by the instructions of all fundraisers and donors in respect of their Personal Information.
+    </string>
+
+    <string name="termsAndCons73Head">Intermediary
+    </string>
+
+    <string name="termsAndCons73">
+     <b>3.0 </b>BeKind, as operator of  our Services, acts as an intermediary between the Charity and
+        the individual users of the BeKind Services. Whilst the Charity and the individual user information
+        resides on the BeKind Services, Bekind does not check or exercise any editorial control over the
+        content of such information, save as required by applicable local laws. In the event that BeKind
+        is made aware of or has knowledge of any unlawful activity or information on the BeKind Services,
+        BeKind shall promptly act to remove or disable access to the information. BeKind shall not be
+        liable to the Charity as a result of its role as intermediary and is not required to notify the
+        Charity of any such removal or disablement of access to information.
+    </string>
+
+
+    <!--/privacy policy-->
+    <string name="privacyHead">
+        Privacy statement
+    </string>
+
+    <string name="privacy">
+        BeKind understands and values the importance of individual privacy. We are strongly committed to
+        protecting
+        the privacy of Our donors, sponsors, campaigners, supporters
+        This privacy statement covers Your use of the App provided by the BeKind Team.
+        The purpose of this Privacy Statement is to inform You of Our commitment to protecting Your
+        privacy and making it clear how We may use Your information. By continuing use this App You
+        are deemed to accept
+        and agree to be bound by the terms of this Privacy Statement.
+    </string>
+
+    <string name="collectHead">
+        Do we collect any of your personal information?
+    </string>
+
+    <string name="collect">
+        When using our App, u will be require to sign up or log in, However we would like to assure you that you personal information are treated confidential and will not be used for any purpose otherwise.
+    </string>
+
+    <string name="aboutApp">
+        BeKind is a benevolent system that is aimed at connecting benevolent organizations and
+        individuals to needy organizations and individuals in society. It makes it for organizations that are in need of
+        help to be found easier and helped faster.
+    </string>
+
+    <string name="aboutCreater">
+        About us
+    </string>
+
+    <string name="aboutCreaterwords">
+        BeKind is a project undertaken and implemented by innovative Students of KNUST, Ghana. Purposely to serve as a bridge between the needy and the privileged, Aiding in the fight against poverty and injustice.
+    </string>
+
+
 </resources>

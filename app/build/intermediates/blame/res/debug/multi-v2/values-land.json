@@ -4,7 +4,7 @@
             "outputFile": "/home/jesse/AndroidStudioProjects/BeKind/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
             "map": [
                 {
-                    "source": "/home/jesse/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/19a5f09187cda8f1ccbac0e9387d2e17/res/values-land/values-land.xml",
+                    "source": "/home/jesse/.gradle/caches/transforms-2/files-2.1/c32b0bba32466c659b311b4bb8347b66/design-28.0.0/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "/home/jesse/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/8afa84ce9c363a012c8106dde91f557e/res/values-land/values-land.xml",
+                    "source": "/home/jesse/.gradle/caches/transforms-2/files-2.1/c0297c05812c4f65312d304e65a3a144/appcompat-v7-28.0.0/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2,3,4",
                         "startColumns": "4,4,4",

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DonateMaterial">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Here you can upload physical materials such as
+toys, bags, shoes."
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"/>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:cardElevation="20sp"
+                android:layout_marginLeft="30dp"
+                app:cardCornerRadius="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Upload an image of the products"
+                    android:gravity="center_horizontal"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorPrimary"/>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="30dp"
+                        android:src="@color/white1"
+                        android:id="@+id/item_image"
+                        android:scaleType="fitXY"
+                        />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/editred"
+                        android:id="@+id/materialImage"
+                        android:layout_gravity="center"/>
+                </FrameLayout>
+            </android.support.v7.widget.CardView>
+
+            <EditText android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/item_description"
+                android:hint="Description of item(s).\nInclude name(s) and quantity of item(s)"
+                android:inputType="textMultiLine">
+            </EditText>
+
+
+            <EditText android:layout_width="match_parent"
+                android:hint="Prize worth (GHc)"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="50dp"
+                android:id="@+id/prize"
+                android:inputType="numberDecimal">
+            </EditText>
+
+            <Button
+                android:id="@+id/submitdonationButton"
+                style="@style/loginButton"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/loginViewsMargin"
+                android:text="SUBMIT"
+                android:layout_marginBottom="20dp"/>
+        </LinearLayout>
+
+
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/loading"
+            android:visibility="gone"/>
+    </FrameLayout>
+
+
+</ScrollView>

@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TermsAndConditions">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textSize="17sp"
+            android:textAlignment="textStart"
+            android:text="@string/termsAndCons"
+            android:layout_gravity="start"/>
+            <!---->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textSize="17sp"
+            android:textAlignment="textStart"
+            android:layout_gravity="start"
+            android:text="@string/termsAndCons2"
+            android:layout_marginTop="10dp"/>
+            <!--a-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textSize="17sp"
+            android:textAlignment="textStart"
+            android:layout_gravity="start"
+            android:text="@string/termsAndCons3"
+            android:layout_marginTop="10dp"/>
+            <!--a-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textSize="17sp"
+            android:textAlignment="textStart"
+            android:layout_gravity="start"
+            android:text="@string/termsAndCons4"
+            android:layout_marginTop="10dp"/>
+            <!--a-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textSize="17sp"
+            android:textAlignment="textStart"
+            android:layout_gravity="start"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/termsAndCons5"
+            android:layout_marginTop="10dp"/>
+            <!--a-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textSize="17sp"
+            android:textAlignment="textStart"
+            android:layout_gravity="start"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/termsAndCons6Head"
+            android:layout_marginTop="10dp"/>
+            <!--a-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textSize="17sp"
+            android:textAlignment="textStart"
+            android:layout_gravity="start"
+            android:text="@string/termsAndCons6"
+            android:layout_marginTop="10dp"/>
+            <!--a-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textSize="17sp"
+            android:textAlignment="textStart"
+            android:layout_gravity="start"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/termsAndCons7Head"
+            android:layout_marginTop="10dp"/>
+            <!--a-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textSize="17sp"
+            android:textAlignment="textStart"
+            android:layout_gravity="start"
+            android:text="@string/termsAndCons721"
+            android:layout_marginTop="10dp"/>
+            <!--a-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textSize="17sp"
+            android:textAlignment="textStart"
+            android:layout_gravity="start"
+            android:text="@string/termsAndCons722"
+            android:layout_marginTop="10dp"/>
+            <!--a-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textSize="17sp"
+            android:textAlignment="textStart"
+            android:layout_gravity="start"
+            android:text="@string/termsAndCons723"
+            android:layout_marginTop="10dp"/>
+            <!--a-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textSize="17sp"
+            android:textAlignment="textStart"
+            android:layout_gravity="start"
+            android:text="@string/termsAndCons7231"
+            android:layout_marginTop="10dp"/>
+            <!--a-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textSize="17sp"
+            android:textAlignment="textStart"
+            android:layout_gravity="start"
+            android:text="@string/termsAndCons7232"
+            android:layout_marginTop="10dp"/>
+            <!--a-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textSize="17sp"
+            android:textAlignment="textStart"
+            android:layout_gravity="start"
+            android:text="@string/termsAndCons724"
+            android:layout_marginTop="10dp"/>
+            <!--a-->
+
+<TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textSize="17sp"
+            android:textAlignment="textStart"
+            android:layout_gravity="start"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/termsAndCons725Head"
+            android:layout_marginTop="10dp"/>
+            <!--a-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textSize="17sp"
+            android:textAlignment="textStart"
+            android:layout_gravity="start"
+            android:text="@string/termsAndCons725"
+            android:layout_marginTop="10dp"/>
+            <!--a-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textSize="17sp"
+            android:textAlignment="textStart"
+            android:layout_gravity="start"
+            android:text="@string/termsAndCons726"
+            android:layout_marginTop="10dp"/>
+            <!--a-->
+
+
+<TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textSize="17sp"
+            android:textAlignment="textStart"
+            android:layout_gravity="start"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/termsAndCons727Head"
+            android:layout_marginTop="10dp"/>
+            <!--a-->
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textSize="17sp"
+            android:textAlignment="textStart"
+            android:layout_gravity="start"
+            android:text="@string/termsAndCons727"
+            android:layout_marginTop="10dp"/>
+            <!--a-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textSize="17sp"
+            android:textAlignment="textStart"
+            android:layout_gravity="start"
+            android:text="@string/termsAndCons728"
+            android:layout_marginTop="10dp"/>
+            <!--a-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textSize="17sp"
+            android:textAlignment="textStart"
+            android:layout_gravity="start"
+            android:text="@string/termsAndCons729"
+            android:layout_marginTop="10dp"/>
+            <!--a-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textSize="17sp"
+            android:textAlignment="textStart"
+            android:layout_gravity="start"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/termsAndCons73Head"
+            android:layout_marginTop="10dp"/>
+            <!--a-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textSize="17sp"
+            android:textAlignment="textStart"
+            android:layout_gravity="start"
+            android:text="@string/termsAndCons73"
+            android:layout_marginTop="10dp"/>
+            <!--a-->
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

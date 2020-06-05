@@ -1,163 +1,293 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@android:color/white"
-    android:layout_marginBottom="20dp"
-    tools:context=".Profile">
+    android:orientation="vertical"
+    android:layout_height="match_parent">
 
-    <LinearLayout
+    <android.support.v7.widget.Toolbar
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        >
 
-        <LinearLayout
+        <!--<ImageView-->
+            <!--android:layout_width="35dp"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:src="@drawable/back"/>-->
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:background="@drawable/helpinghand">
-        </LinearLayout>
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="Profile"
+            android:textSize="20dp"
+            android:textColor="@color/white1"
+            android:textStyle="bold"/>
 
-        <android.support.v7.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="150dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="-80dp"
-            android:elevation="10dp">
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@android:color/white"
+        android:layout_marginBottom="20dp"
+        tools:context=".Profile">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
             <LinearLayout
-                android:layout_width="170dp"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:background="@android:color/transparent">
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
-                <de.hdodenhof.circleimageview.CircleImageView
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:background="@drawable/helpinghand">
+                </LinearLayout>
+
+                <android.support.v7.widget.CardView
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:src="@drawable/profile"/>
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="-80dp"
+                    android:elevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="170dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:background="@android:color/transparent">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:id="@+id/profilepic"
+                            android:src="@drawable/profile"/>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Name"
+                        android:drawableLeft="@drawable/name"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="15sp"
+                        />
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:elevation="20dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="Jesse Anim"
+                            android:id="@+id/fullname"
+                            android:paddingLeft="20dp"
+                            android:gravity="bottom"
+                            android:textSize="18sp"
+                            android:textColor="@android:color/black"
+                            android:background="@color/white1"/>
+
+
+                    </android.support.v7.widget.CardView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Phone Number"
+                        android:drawableLeft="@drawable/phone"
+                        android:layout_marginTop="20dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="15sp"
+                        />
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:elevation="20dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="0268977129"
+                            android:paddingLeft="20dp"
+                            android:textColor="@android:color/black"
+                            android:gravity="bottom"
+                            android:id="@+id/phonenumber"
+                            android:textSize="18sp"
+                            android:background="@color/white1"/>
+
+
+                    </android.support.v7.widget.CardView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Email"
+                        android:drawableLeft="@drawable/email"
+                        android:layout_marginTop="20dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="15sp"
+                        />
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:elevation="20dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="iam@gmail.com"
+                            android:id="@+id/email"
+                            android:textColor="@android:color/black"
+                            android:paddingLeft="20dp"
+                            android:gravity="bottom"
+                            android:textSize="18sp"
+                            android:background="@color/white1"/>
+
+
+                    </android.support.v7.widget.CardView>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Address"
+                        android:drawableLeft="@drawable/address"
+                        android:layout_marginTop="20dp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="15sp"
+                        />
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:elevation="20dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="Jesse Anim, KNUST, Ghana"
+                            android:paddingLeft="20dp"
+                            android:id="@+id/address"
+                            android:textColor="@android:color/black"
+                            android:gravity="bottom"
+                            android:textSize="18sp"
+                            android:background="@color/white1"/>
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/white1"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:elevation="20dp"
+                        android:id="@+id/editCard"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/edit"/>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:elevation="20dp"
+                        android:id="@+id/notificationCard"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/ic_notifications_black_24dp"/>
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:elevation="20dp"
+                        android:id="@+id/donationsCard"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/donations"
+                            />
+                    </android.support.v7.widget.CardView>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="50dp"
+                        android:elevation="20dp"
+                        android:id="@+id/deleteCard"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/delete"
+                            />
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginBottom="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:id="@+id/logoutCard"
+                    android:elevation="20dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Logout"
+                        android:gravity="center"
+                        android:textSize="20sp"/>
+
+                </android.support.v7.widget.CardView>
             </LinearLayout>
-        </android.support.v7.widget.CardView>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-
-            <TextView
+            <ProgressBar
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Name"
-                android:drawableLeft="@drawable/name"
-                android:textStyle="bold"
-                android:layout_marginLeft="20dp"
-                android:textSize="18sp"
-                />
+                android:layout_gravity="center_vertical"
+                android:id="@+id/loading"
+                android:visibility="gone"/>
+        </FrameLayout>
+    </ScrollView>
 
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:elevation="20dp"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:text="Jesse Anim"
-                    android:paddingLeft="20dp"
-                    android:gravity="bottom"
-                    android:textSize="20sp"
-                    android:background="@color/white1"/>
-
-
-            </android.support.v7.widget.CardView>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Phone Number"
-                android:drawableLeft="@drawable/phone"
-                android:layout_marginTop="10dp"
-                android:textStyle="bold"
-                android:layout_marginLeft="20dp"
-                android:textSize="18sp"
-                />
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:elevation="20dp"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:text="0268977129"
-                    android:paddingLeft="20dp"
-                    android:gravity="bottom"
-                    android:textSize="20sp"
-                    android:background="@color/white1"/>
-
-
-            </android.support.v7.widget.CardView>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Email"
-                android:drawableLeft="@drawable/email"
-                android:layout_marginTop="10dp"
-                android:textStyle="bold"
-                android:layout_marginLeft="20dp"
-                android:textSize="18sp"
-                />
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:elevation="20dp"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:text="iam@gmail.com"
-                    android:paddingLeft="20dp"
-                    android:gravity="bottom"
-                    android:textSize="20sp"
-                    android:background="@color/white1"/>
-
-
-            </android.support.v7.widget.CardView>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Address"
-                android:drawableLeft="@drawable/address"
-                android:layout_marginTop="10dp"
-                android:textStyle="bold"
-                android:layout_marginLeft="20dp"
-                android:textSize="18sp"
-                />
-
-            <android.support.v7.widget.CardView
-                android:layout_width="match_parent"
-                android:elevation="20dp"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="40dp"
-                    android:text="Jesse Anim, KNUST, Ghana"
-                    android:paddingLeft="20dp"
-                    android:gravity="bottom"
-                    android:textSize="20sp"
-                    android:background="@color/white1"/>
-
-
-            </android.support.v7.widget.CardView>
-
-
-
-        </LinearLayout>
-
-
-    </LinearLayout>
-
-
-</ScrollView>
+</LinearLayout>

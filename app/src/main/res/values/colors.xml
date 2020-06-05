@@ -13,6 +13,8 @@
     <color name="whiteCardColor">#fff</color>
     <color name="white1">#F7F7F7</color>
     <color name="red">#F40000</color>
+    <color name="lightred">#CC1010</color>
+
     <color name="black">#111111</color>
 
     <!--transparent color-->

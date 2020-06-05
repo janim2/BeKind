@@ -1,4 +1,4 @@
-#Tue Apr 16 12:07:04 GMT 2019
-base.0=/home/jesse/AndroidStudioProjects/BeKind/app/build/intermediates/dex/debug/mergeDexDebug/out
+#Fri Jun 05 22:29:10 GMT 2020
+base.0=/home/jesse/AndroidStudioProjects/BeKind/app/build/intermediates/dex/debug/out/classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

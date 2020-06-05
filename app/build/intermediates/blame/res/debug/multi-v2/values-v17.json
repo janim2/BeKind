@@ -4,7 +4,7 @@
             "outputFile": "/home/jesse/AndroidStudioProjects/BeKind/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v17/values-v17.xml",
             "map": [
                 {
-                    "source": "/home/jesse/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/8afa84ce9c363a012c8106dde91f557e/res/values-v17/values-v17.xml",
+                    "source": "/home/jesse/.gradle/caches/transforms-2/files-2.1/c0297c05812c4f65312d304e65a3a144/appcompat-v7-28.0.0/res/values-v17/values-v17.xml",
                     "from": {
                         "startLines": "2,5,9,12,15,18,22,25,29,33,37,40,43,46,50,53,57",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

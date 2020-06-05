@@ -79,7 +79,7 @@ public class Register extends AppCompatActivity {
                         int theSegin = 100000 + theRemainder.nextInt(899999);
 
                         userID = "Bk" + theSegin+"" + "Sa";
-                        new Registerusers("http://iamjesse75.000webhostapp.com/BeKind/signup.php",
+                        new Registerusers("https://myanim.000webhostapp.com/BeKind/signup.php",
                                 userID,sfirstname,slastname,sphonenumber,semail,shomeAddress,spassword).execute();
 //                        Toast.makeText(Register.this,"Registration Complete",Toast.LENGTH_LONG).show();
                     }else{
