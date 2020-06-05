@@ -77,7 +77,7 @@
              $notifications->execute(array($notifyId,$notifyImage,$nofifySubject,$notifyMessage));
         }
     }else{
-        die(require('lost.html'));
+        die("<h1>Access Denied</h1>");
 
     }
 

@@ -74,7 +74,7 @@
             //failed notification ends here
         }
     }else{
-		die(require('lost.html'));
+        die("<h1>Cannot Access This Page</h1>");
     }
 
 

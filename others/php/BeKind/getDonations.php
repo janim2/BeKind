@@ -4,10 +4,9 @@
         require('config.php');
 
         $userid = $_POST["userID"];
-        // $userid = "Bk156058Sa";
 
         $getDonations = $con->prepare("SELECT OrgId,MaterialId,OrgName,OrgImage,Addate,Addtime FROM Donations WHERE UserID = ?");
-        $getDonations->execute(array($userid));
+        $getDonations->execute(array($userID));
 
         $donationsArray = array();
 

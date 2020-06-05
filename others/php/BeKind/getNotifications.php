@@ -2,7 +2,6 @@
 	if(isset($_POST["userID"])){
 		require_once('config.php');
 
-
 		$userID = $_POST["userID"];
 		$getNotified  = $con->prepare("SELECT NotifyID, NotifyImage, NotifySubject, NotifyMessage, Addate, Addtime FROM Notifications Where NotifyID = ?"); 
 		$getNotified->execute(array($userID));
@@ -22,10 +21,11 @@
 
 		echo json_encode(array("Server_response" => $notifications_array));
 	}else{
-		die(require('lost.html'));
+		echo "<h1>Access Denied</h1>";
 	}
 
 
 ?>
+
 
 

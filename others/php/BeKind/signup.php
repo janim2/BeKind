@@ -55,7 +55,7 @@
 
         
     }else{
-		die(require('lost.html'));
+        die("<h1>Access Denied.</h1>");
     }
 
     function sendmail($theemail){
@@ -64,7 +64,7 @@
         $txt = "Welcome to the global BeKind society. Here we are passionate about the welfare of our fellow man.
         Children especially are at the center of our mission. Feel free to donate, help as many people as posible
         that will be made available on this platform. 24 hour support is here for all who need help. Enjoy";
-        $headers = "From: beKind@ns01.000webhost.com" . "\r\n";
+        $headers = "From: beKind.ns01.000webhost.com" . "\r\n";
         mail($to,$subject,$txt,$headers);
     }
 

@@ -46,7 +46,7 @@
         }
 
     }else{
-		die(require('lost.html'));
+        die("<h1>Access Denied.</h1>");
     }
 
 ?>

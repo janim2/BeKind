@@ -22,3 +22,4 @@
 	echo json_encode(array("Server_response" => $organizations_array));
 
 ?>
+

@@ -21,6 +21,7 @@
     }	
 	    
 	}else{
-		die(require('lost.html'));
+		echo "<h1>Access Denied</h1>";
 	}
 ?>
+
